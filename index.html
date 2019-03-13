@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset='UTF-8'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var dataLink = "http://localhost:8080/data";
+
+            function getData() {
+                $.ajax({
+                    type: 'GET',
+                    url: dataLink,
+                    dataType: 'JSON',
+                    success: function(data) {
+                        $('.name').text("Name: " + data.name);
+                        $('.title').text("Title: " + data.title);
+                        $('.dateOfBirth').text("birth: " + data.dateOfBirth);
+                        $('.phoneNumber').text("Phone Number: " + data.phoneNumber);
+                        $('.email').text("Email: " + data.email);
+                        $('.adress').text("Adress: " + data.adress);
+                        $('.qualifications').text('Qualifications: ' + data.qualifications);
+                        $('<a>', {href: data.links}).appendTo('#links');
+                       
+                    }
+                })
+            }
+            getData();
+        });
+    </script>
+    </head>
+    <body>
+        <div>
+            <p class='name'></p>
+            <p class='title'></p>
+            <p class='dateOfBirth'></p>
+            <p class='phoneNumber'></p>
+            <p class='email'></p>
+            <p class='adress'></p>
+            <p class='qualifications'></p>
+            <a id="links" href="">Hei</a>
+        </div>
+    </body>
+</html>

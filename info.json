@@ -1,0 +1,21 @@
+{
+    "name" : "Sanay",
+    "title" : "Developer",
+    "dateOfBirth" : "1996",
+    "phoneNumber" : "123456789",
+    "email" : "oosan@gmail.com",
+    "adress" : "Ammerudhellinga 70",
+
+    "qualifications" : "Nothing at all",
+    "workExperience" : [
+        {
+            "companyName" : "Experis",
+            "role" : "developer"
+        }
+    ],
+
+    "links" : [
+        "github.com",
+        "linkedin.com"
+    ]
+}
