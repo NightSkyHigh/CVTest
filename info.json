@@ -1,27 +1,21 @@
 {
-    "name" : "Sanay",
-    "title" : "Developer",
-    "dateOfBirth" : "1996",
-    "phoneNumber" : "123456789",
-    "email" : "oosan@gmail.com",
-    "adress" : "Ammerudhellinga 70",
-    "image" : "https://st3.depositphotos.com/1707989/19290/i/1600/depositphotos_192907380-stock-photo-asian-businessman.jpg",
+    "name" : "",
+    "title" : "",
+    "dateOfBirth" : "",
+    "phoneNumber" : "",
+    "email" : "",
+    "adress" : "",
+    "image" : "",
 
-    "qualifications" : "I am a fullstack Java Developer with a wide range of skills. I have experience and knownledge in HTML, CSS, Java, React and many other technological skillsets",
+    "qualifications" : "",
     "workExperience" : [
         {
-            "companyName" : "Experis",
-            "role" : "Fullstack developer"
-        },
-        {
-            "companyName" : "PayEx",
-            "role" : "Backend developer"
+            "companyName" : "",
+            "role" : ""
         }
-
     ],
 
     "links" : [
-        "https://github.com/Sanay1910",
-        "https://www.linkedin.com/in/sanay-oo-14b4b7163/"
+        ""
     ]
 }
