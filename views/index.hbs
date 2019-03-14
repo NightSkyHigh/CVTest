@@ -6,14 +6,26 @@
     </head>
     <body>
         <div>
-            <p >{{data.name}}</p>
-            <p class='title'></p>
-            <p class='dateOfBirth'></p>
-            <p class='phoneNumber'></p>
-            <p class='email'></p>
-            <p class='adress'></p>
-            <p class='qualifications'></p>
-            <ul id="links" class='mdc-list'></ul>
+            <p>name: {{data.name}}</p>
+            <p>title: </title>{{data.title}}</p>
+            <p>Date of Birth: {{data.dateOfBirth}}</p>
+            <p>Phonenumber: {{data.phoneNumber}}</p>
+            <p>Email: {{data.email}}</p>
+            <p>Adress: {{data.adress}}</p>
+            <p>Qualifications:{{data.qualifications}}</p>
+            <ul>
+                {{#each data.workExperience}}
+                <li>{{this.companyName}}</li>
+                <li>{{this.role}}</li>
+                {{/each}}
+            </ul>
+            <ul class="list">
+                {{#each data.links}}
+                <li><a href={{this}}>{{this}}</a></li>
+                {{/each}}
+            </ul>
+            
+            
         </div>
     </body>
 </html>
