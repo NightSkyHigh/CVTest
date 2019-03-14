@@ -5,7 +5,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
-            var dataLink = "http://localhost:8080/data";
+            var dataLink = window.location.href + "data";
 
             function getData() {
                 $.ajax({
@@ -20,7 +20,12 @@
                         $('.email').text("Email: " + data.email);
                         $('.adress').text("Adress: " + data.adress);
                         $('.qualifications').text('Qualifications: ' + data.qualifications);
-                        $('<a>', {href: data.links}).appendTo('#links');
+                        const ul = $('<ul>').appendTo('#links');
+                        const refLink = data.links;
+                        $(refLink).each(function(index, link) {
+                             ul.append($(document.createElement('li')).text(link));
+                        })
+                        //$('<li>', {href: data.links}).appendTo("#links");
                        
                     }
                 })
@@ -38,7 +43,7 @@
             <p class='email'></p>
             <p class='adress'></p>
             <p class='qualifications'></p>
-            <a id="links" href="">Hei</a>
+            <ul id="links"></ul>
         </div>
     </body>
 </html>
