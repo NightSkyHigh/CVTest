@@ -6,12 +6,17 @@
     "email" : "oosan@gmail.com",
     "adress" : "Ammerudhellinga 70",
 
-    "qualifications" : "Nothing at all",
+    "qualifications" : "I am a fullstack Java Developer with a wide range of skills. I have experience and knownledge in HTML, CSS, Java, React and many other technological skillsets",
     "workExperience" : [
         {
             "companyName" : "Experis",
-            "role" : "developer"
+            "role" : "Fullstack developer"
+        },
+        {
+            "companyName" : "PayEx",
+            "role" : "Backend developer"
         }
+
     ],
 
     "links" : [

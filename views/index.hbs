@@ -3,29 +3,71 @@
     <head>
     <meta charset='UTF-8'>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     </head>
     <body>
-        <div>
-            <p>name: {{data.name}}</p>
-            <p>title: </title>{{data.title}}</p>
+      
+    
+  <div class="col s12 m7">
+    <h2 class="header" align="center">CV</h2>
+    <div class="card horizontal">
+      <div class="card-image">
+        <img src="https://p.motionelements.com/stock-video/people/me9055720-man-asian-businessman-business-manager-working-home-typing-japan-a0268.jpg" style="width:500px;height:600px;">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+            <h2>Info</h2>
+            <p>Name: {{data.name}}</p>
+            <p>Title: </title>{{data.title}}</p>
+            <p>Date of Birth: {{data.dateOfBirth}}</p>
+            <p>Phonenumber: {{data.phoneNumber}}</p>
+            <p>Email: {{data.email}}</p>
+            <p>Adress: {{data.adress}}</p>
+        </div>
+        <div class="card-content">
+            <h2>Qualifications</h2>
+            <p>{{data.qualifications}}</p>
+        </div>
+        <div class="card-content">
+            <ul><h2>Experience</h2>
+                {{#each data.workExperience}}
+                <li>Company: {{this.companyName}}</li>
+                <li>Role: {{this.role}}</li>
+                {{/each}}
+            </ul>
+        </div>
+        <div class="card-action">
+            <ul class="mdc-list">
+                {{#each data.links}}
+                    <li class="mdc-list-item"><a href={{this}}>{{this}}</a></li>
+                {{/each}}
+            </ul>        
+        </div>
+      </div>
+    </div>
+  </div>
+    </body>
+</html>
+<!--
+  <div>
+            <p>Name: {{data.name}}</p>
+            <p>Title: </title>{{data.title}}</p>
             <p>Date of Birth: {{data.dateOfBirth}}</p>
             <p>Phonenumber: {{data.phoneNumber}}</p>
             <p>Email: {{data.email}}</p>
             <p>Adress: {{data.adress}}</p>
             <p>Qualifications:{{data.qualifications}}</p>
-            <ul>
+            <ul><h2>Experience</h2>
+
                 {{#each data.workExperience}}
                 <li>{{this.companyName}}</li>
                 <li>{{this.role}}</li>
                 {{/each}}
             </ul>
-            <ul class="list">
+            <ul class="mdc-list">
                 {{#each data.links}}
-                <li><a href={{this}}>{{this}}</a></li>
+                    <li class="mdc-list-item"><a href={{this}}>{{this}}</a></li>
                 {{/each}}
-            </ul>
-            
-            
+            </ul>            
         </div>
-    </body>
-</html>
+        -->
