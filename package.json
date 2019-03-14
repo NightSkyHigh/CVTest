@@ -10,7 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@material/list": "^1.0.1",
     "express": "^4.16.4",
+    "handlebars": "^4.1.0",
+    "hbs": "^4.0.3",
     "nodemon": "^1.18.10"
   }
 }

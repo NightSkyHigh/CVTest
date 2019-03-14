@@ -25,8 +25,6 @@
                             let li = $('<li>').appendTo('#links');
                             li.append($(document.createElement('a')).attr('href',link).text(link));
                         })
-                        //$('<li>', {href: data.links}).appendTo("#links");
-                       
                     }
                 })
             }
@@ -43,7 +41,7 @@
             <p class='email'></p>
             <p class='adress'></p>
             <p class='qualifications'></p>
-            <ul id="links"></ul>
+            <ul id="links" class='mdc-list'></ul>
         </div>
     </body>
 </html>
